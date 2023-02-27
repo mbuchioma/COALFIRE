@@ -1,0 +1,14 @@
+vpc_cidr        = "10.1.0.0/16"
+public_subnets  = ["10.1.0.0/24", "10.1.1.0/24"]
+private_subnets = ["10.1.2.0/24", "10.1.3.0/24"]
+env             = "Dev"
+project         = "demo"
+azs             = ["us-west-2a", "us-west-2b"]
+instance_type   = "t2.micro"
+ami             = "ami-0edab8d70528476d3"
+key_name        = "demo-0222"
+min_size        = 2
+max_size        = 6
+storage_class  =  "DEEP_ARCHIVE"
+transition_day = 90
+map_public_ip_on_launch = true
